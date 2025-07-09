@@ -1,8 +1,10 @@
 name: Define Objective Function
 description: Writes the objective() function to a .py file for use in the next brick
+inputs:
+  - {}
 outputs:
-  - name: objective_file
-    type: file
+  - {name: objective_file, type: file}
+  
 implementation:
   container:
     image: python:3.9
